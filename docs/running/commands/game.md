@@ -39,17 +39,17 @@ controller.
 
 Specifies the name of the config file (or files) to load. Default
 `config.yaml` is used if this option is omitted. You do not have to
-specify the .yaml extension.
+specify the .yaml extension. Note that it is not sufficient only to specify the config file, you still have to run your command either from inside the machine folder or specify the [machine folder](index.md#machine_folder) as your first argument.
 
 Examples:
 
-Run MPF and load the config file `config/config.yaml`:
+Run MPF (from inside the machine folder) and load the config file `config/config.yaml`:
 
 ``` shell
 $ mpf game
 ```
 
-Run MPF and load the config file `config/nodisplay.yaml`:
+Run MPF (from inside the machine folder) and load the config file `config/nodisplay.yaml`:
 
 ``` shell
 $ mpf game -c nodisplay
@@ -79,17 +79,18 @@ which is inside the MPF package which sets up default things like which
 modules are loaded, paths used, etc. If for some reason you want to
 override this file, you can do so with the `-C` option.
 
-### -h
-
-Displays the command line help and exits. (Pretty much what's on this
-page.)
-
 ### -f
 
 Forces MPF to load all assets at start (rather than the default behavior
 where some assets can be loaded only when modes start or based on other
 events). This is useful during development to ensure that all assets are
 valid and loadable.
+
+
+### -h
+
+Displays the command line help and exits. (Pretty much what's on this
+page.)
 
 ### -t
 

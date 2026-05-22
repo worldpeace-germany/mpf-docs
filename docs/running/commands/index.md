@@ -109,7 +109,7 @@ So `$ mpf` by itself is the same as `$ mpf game`.
 
 ### machine_folder
 
-To use the machine_folder optional argument, you must include it after the command name, for example:
+To use the machine_folder optional argument, you must include it after the command name and before the optional command line switches, for example:
 
 ``` shell
 $ mpf game ./path/to/machine_folder -P
